@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="course.css">
+    <title>Document</title>
+    <style>
+        textarea {
+            font-size: 20px;
+            font-weight: normal;
+            font-style: normal;
+            height: 80px;
+            width: 500px;
+            text-decoration-line: none;
+            font-family: Arial, Helvetica, sans-serif ;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Feedback</h1>
+    <span>
+        <button onclick="bold()">B</button>
+        <button onclick="italic()">I</button>
+        <button onclick="under()">Underlined</button>
+    </span>
+    <span>
+        <select id="yy" onclick="selection()">
+            <option value="20px">20px</option>
+            <option value="30px">30px</option>
+            <option value="40px">40px</option>
+        </select>
+    </span>
+    <span>
+        <select id="xx" onclick="selection2()">
+            <option value="Arial">Arial</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Geneva"> Geneva</option>
+        </select>
+    </span>
+    <div>
+
+        <textarea id="text" name="textbox">ecrire </textarea>
+    </div>
+            
+</body>
+<script src="main.js"></script>
+
+</html>
