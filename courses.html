@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="course.css">
+    
     <title>Document</title>
     <style>
         textarea {
@@ -17,11 +17,61 @@
             text-decoration-line: none;
             font-family: Arial, Helvetica, sans-serif ;
         }
+        p{
+            background-color: pink;
+        }
+        .hover{
+            background-color: yellow;
+        }
     </style>
+    <link rel="stylesheet"  href="course.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 
 <body>
-    <h1>Feedback</h1>
+    
+    <a href="#ex1" rel="modal:open">
+             <img src="./ressource/Objet dynamique vectoriel.png"  alt="">
+    </a>
+    <a href="#ex1" rel="modal:open">
+        <img src="./ressource/Objet dynamique vectoriel1.png" alt="">
+    </a>
+    <a href="#ex1" rel="modal:open">
+        <img src="./ressource/Objet dynamique vectoriel2.png" alt="">
+    </a>
+    <a href="#ex1" rel="modal:open">
+        <img src="./ressource/Objet dynamique vectoriel3.png" alt="">
+    </a>
+    <a href="#ex1" rel="modal:open">
+        <img src="./ressource/Objet dynamique vectoriel4.png" alt="">
+    </a>
+    <a href="#ex1" rel="modal:open">
+        <img src="./ressource/Objet dynamique vectoriel5.png" alt="">
+    </a>
+
+    
+    
+
+
+    
+   
+   
+
+        
+        
+        
+    
+    
+    <div id="ex1" class="modal">
+        <p>This is GoMyCode Track.</p>
+        <p>Each track has its own goal.</p>    
+         <p>By adopting this track, you chose your own goal.</p>   
+        <a href="#" rel="modal:close">Close</a>
+      </div>
+    
+
+    <div >
+        <h1>Feedback</h1>
     <span>
         <button onclick="bold()">B</button>
         <button onclick="italic()">I</button>
@@ -45,8 +95,12 @@
 
         <textarea id="text" name="textbox">ecrire </textarea>
     </div>
-            
+    </div>
+    <script src="jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="main.js"></script>           
 </body>
-<script src="main.js"></script>
+
+
 
 </html>
